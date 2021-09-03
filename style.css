@@ -10,7 +10,8 @@ body{
     font-family: 'Red Hat Display';
     background-image: url(images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
+    background-position: top;
     background-color: hsl(225, 100%, 94%);
     text-align: center;
     color: hsl(224, 23%, 55%);
@@ -82,6 +83,7 @@ body{
 
 .button1:hover{
     cursor: pointer;
+    opacity: 0.7;
 }
 
 .button2{
@@ -92,5 +94,6 @@ body{
 
 .button2:hover{
     cursor: pointer;
+    color: hsl(223, 47%, 23%);
 }
 
