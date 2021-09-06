@@ -86,6 +86,7 @@ I've done this challenge in the beginning of september. All challenges i do, i p
 - Instagram - [@MarkosComK](https://www.instagram.com/markoscomk/)
 - Twitter - [@MarkosComK](https://twitter.com/markoscomk)
 
+
 ## Acknowledgments
 
 If you want to give me a tip (Anyone). Send me a mensage i'll be happy with your help, no matter how much you know about development. Feel free to talk with me in about whatever you want. 
@@ -93,4 +94,14 @@ If you want to give me a tip (Anyone). Send me a mensage i'll be happy with your
 ## Last mensage
 
 Everithing happens for a reason and this is there to help me [you].
+
+<br>
+
+<div>
+  <a href="https://instagram.com/MarkosComK" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%234e2d23?style=for-the-badge&logo=instagram&logoColor=white" target="_blank" ></a>
+  <a href="https://twitter.com/markoscomk" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" target="_blank" ></a>
+ <a href = "mailto:markoscomks@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank" ></a>
+</div>
+
+<br>
 
