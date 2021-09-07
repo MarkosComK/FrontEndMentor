@@ -35,6 +35,10 @@ ul p {
   color: rgba(255, 255, 255, 0.75);
 }
 
+ul a {
+  text-decoration: none;
+}
+
 .contentwrap {
   padding-top: 3.0em;
   position: relative;
@@ -66,8 +70,19 @@ ul p {
   margin: 24px 0px 46px;
   width: 150px;
   height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
   border-radius: 3em;
   background: #f2f2f2;
+}
+
+.card1 .button1:hover {
+  background: #e38826;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.card1 .button1:hover .b-text {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .card2 {
@@ -92,8 +107,19 @@ ul p {
   margin: 24px 0px 46px;
   width: 150px;
   height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
   border-radius: 3em;
   background: #f2f2f2;
+}
+
+.card2 .button2:hover {
+  background: #006970;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.card2 .button2:hover .b-text {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 .card3 {
@@ -120,7 +146,18 @@ ul p {
   width: 150px;
   height: 48px;
   border-radius: 3em;
+  border: 1px solid rgba(255, 255, 255, 0.75);
   background: #f2f2f2;
+}
+
+.card3 .button3:hover {
+  background: #004241;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.card3 .button3:hover .b-text {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 @media (min-width: 1200px) {

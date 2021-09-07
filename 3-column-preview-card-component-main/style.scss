@@ -31,6 +31,9 @@ ul{
         font-size: 0.9em;
         color: $white;
     }
+    a{
+        text-decoration: none;
+    }
 }
 
 
@@ -57,8 +60,17 @@ ul{
        margin: 24px 0px 46px;
        width: 150px;
        height: 48px;
+       border: 1px solid $white;
        border-radius: 3em;
        background: $gray;
+       
+       &:hover{
+           background: $orange;
+           transition: 0.6s;
+           .b-text{
+               color: $white;
+           }
+       }
    }
 }
 
@@ -75,8 +87,16 @@ ul{
         margin: 24px 0px 46px;
         width: 150px;
         height: 48px;
+        border: 1px solid $white;
         border-radius: 3em;
         background: $gray;
+        &:hover{
+            background: $cyan;
+            transition: 0.6s;
+            .b-text{
+                color: $white;
+            }
+        }
     }
  }
 
@@ -95,7 +115,15 @@ ul{
         width: 150px;
         height: 48px;
         border-radius: 3em;
+        border: 1px solid $white;
         background: $gray;
+        &:hover{
+            background: $darkcyan2;
+            transition: 0.6s;
+            .b-text{
+                color: $white;
+            }
+        }
     }
  }
 
