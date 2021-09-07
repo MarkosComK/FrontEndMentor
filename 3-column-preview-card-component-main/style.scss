@@ -1,7 +1,5 @@
-@import "./colors";
-
+@import './colors';
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
 body{
@@ -10,127 +8,130 @@ body{
     box-sizing: border-box;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-}
-
-.cards{
-    padding-bottom: 58px;
-    border-radius: 10px;
-    position: absolute;
-    top: 88px;
-    max-width: 100%;
-    text-align: left;
-}
-.content {
-    margin-top: 58px;
-    width: 232px;
-    color: #FFF;
-    h1 {
+ul{
+    margin: 100px 0px;
+    padding: 0;
+    list-style: none;
+    color: $gray;
+    li{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 86vw;
+        max-width: 516px;
+    }
+    h2{
         font-family: 'Big Shoulders Display';
         text-transform: uppercase;
-        font-size: 2.5em;
+        font-size: 2.4em;
     }
-    p {
-        color: $white;
-        font-size: 15px;
-        line-height: 24px;
+    p{
         font-family: 'Lexend Deca';
-    }
-    img{
-        width: 60px;
-    }
-}
-.card1{
-    border-radius: 10px 10px 0px 0px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    background: $orange;
-    width: 327px;
-    height: 442px;
-}
-.card2{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    background: $cyan;
-    width: 327px;
-    height: 442px;
-}
-.card3{
-    border-radius: 0px 0px 10px 10px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    background: $darkcyan2;
-    width: 327px;
-    height: 442px;
-}
-.button1{
-    width: 150px;
-    height: 48px;
-    position: absolute;
-    bottom: 45px;
-    border-radius: 30px;
-    text-align: center;
-    background-color: $gray;
-    
-    p{
-        color: $orange;
-    }
-}
-.button2{
-    width: 150px;
-    height: 48px;
-    position: absolute;
-    bottom: 45px;
-    border-radius: 30px;
-    text-align: center;
-    background-color: $gray;
-    
-    p{
-        color: $cyan;
-    }
-}
-.button3{
-    width: 150px;
-    height: 48px;
-    position: absolute;
-    bottom: 45px;
-    border-radius: 30px;
-    text-align: center;
-    background-color: $gray;
-    
-    p{
-        color: $darkcyan2;
+        line-height: 1.7em;
+        font-size: 0.9em;
+        color: $white;
     }
 }
 
-@media (min-width: 1440px) {
-    .cards {
-        padding-bottom: 0px;
-        position: absolute;
-        top: 170px;
-        display: flex;
+
+
+.contentwrap{
+    padding-top: 3.0em;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+.card1{
+    border: 1px solid $orange;
+    border-radius: 10px 10px 0px 0px;
+    background: $orange;
+   .b-text{
+       color: $orange;
+   }
+   .button1{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       margin: 24px 0px 46px;
+       width: 150px;
+       height: 48px;
+       border-radius: 3em;
+       background: $gray;
+   }
+}
+
+.card2{
+    border: 1px solid $cyan;
+    background: $cyan;
+    .b-text{
+        color: $cyan;
     }
+    .button2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 24px 0px 46px;
+        width: 150px;
+        height: 48px;
+        border-radius: 3em;
+        background: $gray;
+    }
+ }
+
+.card3{
+    border: 1px solid $darkcyan2;
+    border-radius: 0px 0px 10px 10px;
+    background: $darkcyan2;
+    .b-text{
+        color: $darkcyan2;
+    }
+    .button3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 24px 0px 46px;
+        width: 150px;
+        height: 48px;
+        border-radius: 3em;
+        background: $gray;
+    }
+ }
+
+@media(min-width: 1200px) {
+    ul{
+        top: 80px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        width: 59vw;
+    }
+    
+    .contentwrap{
+        padding-top: 3.0em;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 64%;
+    }
+
     .card1{
         border-radius: 10px 0px 0px 10px;
-        width: 305px;
-        height: 498px;
+        .button1{
+            margin-top: 5.125rem;
+        }
     }
     .card2{
-        width: 305px;
-        height: 498px;
+        .button2{
+            margin-top: 5.125rem;
+        }
     }
     .card3{
-        width: 305px;
         border-radius: 0px 10px 10px 0px;
-        height: 498px;
+        .button3{
+            margin-top: 5.125rem;
+        }
     }
 }
