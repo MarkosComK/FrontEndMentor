@@ -23,8 +23,8 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 Users should be able to:
 
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
+- View the optimal layout depending on their device's screen size 🟢
+- See hover states for interactive elements 🟢
 
 ### Screenshot
 
@@ -49,7 +49,11 @@ Users should be able to:
 
 ### What I learned
 
-I learned how to use SASS to better organize the code and improve its future modification. Improved use of html divs and tags and flexbox behavior.
+I learned how to use SASS to better organize the code and improve its future modification. Improved use of html divs and tags and flexbox behavior. I also improved my semantic using of the tags, like below.
+
+```html
+<a href="#" alt="" aria-hidden="true"></a>
+```
 
 Below is the format i used to organize the colors with SASS. This project is my first contact with this kind of use of CSS
 
