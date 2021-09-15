@@ -11,6 +11,19 @@ body{
     align-items: center;
     height: 100vh;
     font-family: 'Kumbh Sans';
+    overflow: hidden;
+}
+.bg-imgs img:first-child{
+    position: absolute;
+    left: -450px;
+    top: -50%;
+    z-index: -1;
+}
+.bg-imgs img:last-child{
+    position: absolute;
+    right: -450px;
+    bottom: -50%;
+    z-index: -1;
 }
 h1{
     font-size: 1.2em;
