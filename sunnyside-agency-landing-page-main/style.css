@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Fraunces';
+}
+
+header {
+  height: 64vh;
+}
+
+header .background {
+  position: absolute;
+  background-image: url(./images/mobile/image-header.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: 100vw;
+  z-index: -1;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 84px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 22px;
+}
+
+header nav .logo {
+  font-family: 'Barlow';
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: white;
+}
+
+#section1 {
+  text-align: center;
+}
+
+#section1 #sec1-img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 2;
+      grid-template-rows: 2;
+}
+
+#section1 #sec1-img img {
+  width: 100%;
+}
+
+#section1 #text-container {
+  padding: 61px 22px 58px;
+}
+
+#section1 #text-container h2 {
+  font-size: 2em;
+}
+
+#section1 #text-container p {
+  line-height: 30px;
+  padding-top: 30px;
+  font-family: 'Barlow';
+  font-size: 1.1250em;
+  font-weight: 400;
+}
+
+#section1 #text-container span {
+  text-transform: uppercase;
+  font-family: 'Fraunces';
+}
+
+#section2 {
+  text-align: center;
+}
+
+#section2 #sec1-img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 2;
+      grid-template-rows: 2;
+}
+
+#section2 #sec1-img img {
+  width: 100%;
+}
+
+#section2 #text-container {
+  padding: 64px 29px 58px;
+}
+
+#section2 #text-container h2 {
+  font-size: 2em;
+}
+
+#section2 #text-container p {
+  line-height: 30px;
+  padding-top: 30px;
+  font-family: 'Barlow';
+  font-size: 1.1250em;
+  font-weight: 400;
+}
+
+#section2 #text-container span {
+  text-transform: uppercase;
+  font-family: 'Fraunces';
+}
+
+#section3 {
+  line-height: 30px;
+}
+
+#section3 h2 {
+  font-size: 2em;
+}
+
+#section3 p {
+  font-size: 1.1250em;
+  font-family: 'Barlow';
+}
+
+#section3 #text-container {
+  text-align: center;
+  padding: 378px 29px 0px;
+}
+
+#section3 #content-bg {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+#section4 #prof1 {
+  text-align: center;
+  line-height: 29px;
+}
+
+#section4 #prof1 h2 {
+  padding: 53px 47px 0px;
+}
+
+#section4 #prof1 img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin: 72px 0px 59px;
+}
+
+#section4 #prof1 p {
+  font-family: 'Barlow';
+  padding: 0px 28px 8px;
+}
+
+#section4 #prof2 {
+  text-align: center;
+  line-height: 29px;
+}
+
+#section4 #prof2 h2 {
+  padding: 53px 47px 0px;
+}
+
+#section4 #prof2 img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin: 72px 0px 59px;
+}
+
+#section4 #prof2 p {
+  font-family: 'Barlow';
+  padding: 0px 28px 8px;
+}
+
+#section4 #prof3 {
+  text-align: center;
+  line-height: 29px;
+}
+
+#section4 #prof3 h2 {
+  padding: 53px 47px 0px;
+}
+
+#section4 #prof3 img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin: 72px 0px 59px;
+}
+
+#section4 #prof3 p {
+  font-family: 'Barlow';
+  padding: 0px 28px 8px;
+}
+
+#section4 #prof3 p:last-child {
+  padding-bottom: 102px;
+}
+
+#section5 .sec5-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 2;
+      grid-template-rows: 2;
+}
+
+#section5 .sec5-grid img {
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+}
+
+footer div {
+  margin: 56px 0px 42px;
+  font-size: 35px;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer #icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer #icons img {
+  padding-right: 30px;
+}
+
+footer #icons img:last-child {
+  padding: 0;
+}
+/*# sourceMappingURL=style.css.map */
