@@ -15,9 +15,10 @@ header{
     .background{
         position: absolute;
         background-image: url(./images/mobile/image-header.jpg);
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
-        height: 1000px;
+        background-position: center;
+        height: 64vh;
         width: 100vw;
         z-index: -1;
     }
@@ -107,9 +108,20 @@ header{
         text-align: center;
         padding: 378px 29px 0px;
     }
-    #content-bg{
-        position: absolute;
-        width: 100%;
+    #content1{
+        background-image: url(images/mobile/image-graphic-design.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 80vh;
+        z-index: -1;
+    }
+    #content2{
+        background-image: url(images/mobile/image-photography.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 80vh;
         z-index: -1;
     }
 }
