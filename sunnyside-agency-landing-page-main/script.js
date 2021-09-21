@@ -29,9 +29,9 @@ function changeImg() {
         const sec2Img = document.getElementById('sec2-img').src="images/desktop/image-stand-out.jpg"
 
         const img1 = document.getElementById('img1').src="images/desktop/image-gallery-milkbottles.jpg"
-        const img2 = document.getElementById('img2').src="images/mobile/image-gallery-orange.jpg"
-        const img3 = document.getElementById('img3').src="images/mobile/image-gallery-cone.jpg"
-        const img4 = document.getElementById('img4').src="images/mobile/image-gallery-sugar-cubes.jpg"
+        const img2 = document.getElementById('img2').src="images/desktop/image-gallery-orange.jpg"
+        const img3 = document.getElementById('img3').src="images/desktop/image-gallery-cone.jpg"
+        const img4 = document.getElementById('img4').src="images/desktop/image-gallery-sugarcubes.jpg"
     }
 }
 
