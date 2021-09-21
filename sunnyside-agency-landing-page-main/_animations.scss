@@ -1,0 +1,18 @@
+header{
+    #arrow{
+        animation-duration: 1.5s;
+        animation-name: updown;
+        animation-iteration-count: infinite;
+    }
+    @keyframes updown{
+        0%{
+            margin-top: 0%;
+        }
+        50%{
+            margin-top: 10%;
+        }
+        100%{
+            margin-top: 0%;
+        }
+    }
+}

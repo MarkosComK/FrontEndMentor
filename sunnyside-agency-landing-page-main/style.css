@@ -1,15 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
-body {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Fraunces';
+header #arrow {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: updown;
+          animation-name: updown;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes updown {
+  0% {
+    margin-top: 0%;
+  }
+  50% {
+    margin-top: 10%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
+@keyframes updown {
+  0% {
+    margin-top: 0%;
+  }
+  50% {
+    margin-top: 10%;
+  }
+  100% {
+    margin-top: 0%;
+  }
 }
 
 header {
   height: 64vh;
+}
+
+header #we {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  letter-spacing: 5px;
+  position: absolute;
+  width: 100vw;
+  max-width: 1440px;
+  height: 80%;
+  top: 14%;
+  text-align: center;
 }
 
 header .background {
@@ -35,6 +73,7 @@ header nav {
       -ms-flex-align: center;
           align-items: center;
   margin: 0px 22px;
+  z-index: 1;
 }
 
 header nav .logo {
@@ -43,6 +82,138 @@ header nav .logo {
   letter-spacing: 2px;
   font-weight: 800;
   color: white;
+}
+
+header nav .hamburguer {
+  display: none;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  list-style: none;
+}
+
+header nav ul a {
+  font-family: 'Barlow';
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+header nav ul a span {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: 'Fraunces';
+  color: black;
+}
+
+header nav ul a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #fad400;
+          text-decoration-color: #fad400;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header nav ul a:last-child {
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: white;
+  text-decoration: none;
+}
+
+header nav ul a:last-child:hover {
+  background-color: #fad400;
+}
+
+@media (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 22px;
+    top: 110px;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 370px;
+    height: 305px;
+    background-color: white;
+    -webkit-transform: translateX(110%);
+            transform: translateX(110%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .nav-links a {
+    color: #818498;
+  }
+  .nav-links a:last-child {
+    background-color: #fad400;
+  }
+  .nav-links::before {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-bottom: 15px solid white;
+    border-right: 15px solid white;
+  }
+  .show-nav {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  header nav {
+    width: 92vw;
+    margin: 0;
+    padding-right: 22px;
+    padding-left: 22px;
+    background-color: #3EBFFF;
+  }
+  header nav .hamburguer {
+    display: block;
+  }
+  header nav .hamburguer:hover {
+    cursor: pointer;
+  }
+}
+
+/*
+html{
+    scroll-behavior: smooth;
+}
+*/
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Fraunces';
 }
 
 #section1 {
@@ -63,6 +234,7 @@ header nav .logo {
 }
 
 #section1 #text-container {
+  color: #23303e;
   padding: 61px 22px 58px;
 }
 
@@ -84,6 +256,7 @@ header nav .logo {
 }
 
 #section2 {
+  color: #23303e;
   text-align: center;
 }
 
@@ -140,6 +313,7 @@ header nav .logo {
 }
 
 #section3 #content1 {
+  color: #25564b;
   background-image: url(images/mobile/image-graphic-design.jpg);
   background-size: cover;
   background-position: center;
@@ -149,12 +323,28 @@ header nav .logo {
 }
 
 #section3 #content2 {
+  color: #19536b;
   background-image: url(images/mobile/image-photography.jpg);
   background-size: cover;
   background-position: center;
   width: 100vw;
   height: 80vh;
   z-index: -1;
+}
+
+#section4 {
+  color: #23303e;
+}
+
+#section4 h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
+  padding-top: 65px;
+  padding-bottom: 0;
+  opacity: 0.7;
+  letter-spacing: 3px;
 }
 
 #section4 #prof1 {
@@ -224,25 +414,32 @@ header nav .logo {
   padding-bottom: 102px;
 }
 
-#section5 .sec5-grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 2;
-      grid-template-rows: 2;
+#secgrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-#section5 .sec5-grid img {
-  width: 100%;
+#secgrid img {
+  width: 50%;
+  display: block;
 }
 
 footer {
+  background-color: #90d4c5;
+  color: #25564b;
+  font-family: 'Barlow';
   text-align: center;
 }
 
+footer .flogo {
+  font-weight: 800;
+}
+
 footer div {
-  margin: 56px 0px 42px;
+  padding: 56px 0px 42px;
   font-size: 35px;
 }
 
@@ -256,7 +453,12 @@ footer ul {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  padding-left: 0;
+}
+
+footer ul li {
+  color: #25564b;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 footer a {
@@ -274,6 +476,7 @@ footer #icons {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 40px;
 }
 
 footer #icons img {
@@ -285,6 +488,9 @@ footer #icons img:last-child {
 }
 
 @media (min-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
   section {
     max-width: 1440px;
   }
@@ -351,6 +557,12 @@ footer #icons img:last-child {
   #section1 div:nth-child(1) img {
     height: 100%;
   }
+  #section1 div:nth-child(1) img:hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    -webkit-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+  }
   #section1 div:nth-child(2) {
     text-align: left;
     -ms-grid-column: 1;
@@ -368,6 +580,12 @@ footer #icons img:last-child {
   }
   #section2 img {
     height: 100%;
+  }
+  #section2 img:hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    -webkit-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
   }
   #section2 #text-container {
     padding: 17.16% 22.6% 20.83% 15.8%;
@@ -449,6 +667,12 @@ footer #icons img:last-child {
     margin-top: 56px;
     margin-bottom: 0px;
   }
+  #section4 #prof1:hover, #section4 #prof2:hover, #section4 #prof3:hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    -webkit-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+  }
   #section4 div:nth-child(4) {
     -ms-grid-column: 4;
     -ms-grid-column-span: 1;
@@ -470,19 +694,9 @@ footer #icons img:last-child {
     -ms-grid-row: 2;
     grid-row: 2;
   }
-  .sec5-grid {
-    border: 1px solid red;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-    -ms-grid-rows: 2;
-        grid-template-rows: 2;
-    grid-gap: 20px;
-  }
-  .sec5-grid img {
-    border: 1px solid black;
-    width: 10%;
+  #secgrid img {
+    display: block;
+    width: 25%;
   }
   footer {
     background-color: #90d4c5;
@@ -495,7 +709,7 @@ footer #icons img:last-child {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100vw;
+    width: auto;
     margin: 0;
     padding-top: 38px;
   }

@@ -2,7 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
 
 @import './colors';
+@import './animations';
+@import './header';
 
+/*
+html{
+    scroll-behavior: smooth;
+}
+*/
 body{
     margin: 0;
     padding: 0;
@@ -10,33 +17,7 @@ body{
     font-family: 'Fraunces';
 }
 
-header{
-    height: 64vh;
-    .background{
-        position: absolute;
-        background-image: url(./images/mobile/image-header.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 64vh;
-        width: 100vw;
-        z-index: -1;
-    }
-    nav{
-        display: flex;
-        height: 84px;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0px 22px;
-        .logo{
-            font-family: 'Barlow';
-            font-size: 25px;
-            letter-spacing: 2px;
-            font-weight: 800;
-            color: $White;
-        }
-    }
-}
+
 
 #section1 {
     text-align: center;
@@ -49,6 +30,7 @@ header{
         }
     }
     #text-container{
+        color: $Verydarkdesaturatedblue;
         padding: 61px 22px 58px;
         h2{
             font-size: 2em;
@@ -67,6 +49,7 @@ header{
     }
 }
 #section2 {
+    color: $Verydarkdesaturatedblue;
     text-align: center;
     #sec1-img{
         display: grid;
@@ -109,6 +92,7 @@ header{
         padding: 378px 29px 0px;
     }
     #content1{
+        color: $Darkdesaturatedcyan;
         background-image: url(images/mobile/image-graphic-design.jpg);
         background-size: cover;
         background-position: center;
@@ -117,6 +101,7 @@ header{
         z-index: -1;
     }
     #content2{
+        color: $Darkblue;
         background-image: url(images/mobile/image-photography.jpg);
         background-size: cover;
         background-position: center;
@@ -126,9 +111,20 @@ header{
     }
 }
 #section4{
+    color: $Verydarkdesaturatedblue;
+    h2{
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 18px;
+        margin: 0;
+        padding-top: 65px;
+        padding-bottom: 0;
+        opacity: 0.7;
+        letter-spacing: 3px;
+    }
     #prof1{
             text-align: center ;
-        line-height: 29px;
+            line-height: 29px;
         h2{
             padding: 53px 47px 0px;
         }
@@ -182,21 +178,25 @@ header{
     }
 }
 
-#section5{
-    .sec5-grid{
-        display: grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-rows: 2;
-        img{
-            width: 100%;
-        }
+#secgrid{
+    display: flex;
+    flex-wrap: wrap;
+    img{
+        width: 50%;
+        display: block;
     }
 }
 
 footer{
+    background-color: #90d4c5;
+    color: $Darkdesaturatedcyan;
+    font-family: 'Barlow';
+    .flogo{
+        font-weight: 800;
+    }
     text-align: center;
     div{
-        margin: 56px 0px 42px;
+        padding: 56px 0px 42px;
         font-size: 35px;
     }
     ul{
@@ -204,7 +204,11 @@ footer{
         justify-content: space-around;
         align-items: center;
         list-style: none;
-        padding-left: 0;
+        li{
+            color: $Darkdesaturatedcyan;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
     }
     a{
         text-decoration: none;
@@ -214,6 +218,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 40px;
         img{
             padding-right: 30px;
         }
@@ -224,6 +229,9 @@ footer{
 }
 
 @media (min-width:800px) {
+    body{
+        overflow-x: hidden;
+    }
     section{
         max-width: 1440px;
     }
@@ -276,6 +284,10 @@ footer{
             grid-column: 2;
             img{
                 height: 100%;
+                &:hover{
+                    transform: scale(1.03);
+                    transition: 0.1s ease-in;
+                }
             }
         }
 
@@ -292,6 +304,10 @@ footer{
         
         img{
             height: 100%;
+            &:hover{
+                transform: scale(1.03);
+                transition: 0.1s ease-in;
+            }
         }
         #text-container{
             padding: 17.16% 22.6% 20.83% 15.8%;
@@ -365,6 +381,10 @@ footer{
                 margin-top: 56px;
                 margin-bottom: 0px;
             }
+            &:hover{
+                transform: scale(1.03);
+                transition: 0.1s ease-in;
+            }
         }
         div:nth-child(4){
             grid-column: 4/5;
@@ -379,17 +399,11 @@ footer{
             grid-row: 2;
         }
     }
-    .sec5-grid{
-        border: 1px solid red;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 2;
-        grid-gap: 20px;
+    #secgrid{
         img{
-            border: 1px solid black;
-            width: 10%;
+            display: block;
+            width: 25%;
         }
-    
     }
     footer{
         background-color: #90d4c5;
@@ -399,7 +413,7 @@ footer{
         }
         ul{
             justify-content: center;
-            width: 100vw;
+            width: auto;
             margin: 0;
             padding-top: 38px;
             
