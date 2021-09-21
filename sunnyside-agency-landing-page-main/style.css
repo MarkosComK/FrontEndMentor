@@ -501,7 +501,7 @@ footer #icons a img:last-child {
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
     max-width: 1440px;
-    height: 80vh;
+    height: 85.5vh;
   }
   header .background {
     background-image: url(images/desktop/image-header.jpg);
