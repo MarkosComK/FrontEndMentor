@@ -39,6 +39,7 @@ body{
 }
 
 #section1 {
+    background-color: $Softwhite;
     text-align: center;
     .sec1-img{
         display: grid;
@@ -50,6 +51,7 @@ body{
     }
 }
 #section2 {
+    background-color: $Softwhite;
     color: $Verydarkdesaturatedblue;
     text-align: center;
     .sec1-img{
@@ -95,6 +97,7 @@ body{
     }
 }
 #section4{
+    background-color: $Softwhite;
     color: $Verydarkdesaturatedblue;
     h2{
         text-transform: uppercase;
@@ -209,9 +212,11 @@ footer{
         padding: 40px;
         a{
             img{
-                margin-right: 30px;
+                margin-right: 15px;
+                margin-left: 15px;
                 &:hover{
                     transform: scale(1.2);
+                    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(358deg) brightness(106%) contrast(200%);
                 }
             }
             img:last-child{
@@ -239,7 +244,7 @@ footer{
         left: 50%;
         transform: translate(-50%);
         max-width: 1440px;
-        height: 85.5vh;
+        height: 87vh;
         .background{
             background-image: url(images/desktop/image-header.jpg);
             height: 100%;
@@ -409,6 +414,13 @@ footer{
             width: auto;
             margin: 0;
             padding-top: 38px;
+            a{
+                color: $Darkmoderatecyan;
+                &:hover{
+                    transition: 0.4s;
+                    color: $White;
+                }
+            }
             
         }
         li{

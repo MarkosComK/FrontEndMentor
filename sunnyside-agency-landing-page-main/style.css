@@ -40,13 +40,13 @@ header {
 header #we {
   color: white;
   text-transform: uppercase;
-  font-size: 1.5em;
-  letter-spacing: 5px;
+  font-size: 1.7em;
+  letter-spacing: 11.4px;
   position: absolute;
-  width: 99vw;
+  width: 100vw;
   max-width: 1440px;
   height: 80%;
-  top: 14%;
+  top: 20%;
   text-align: center;
 }
 
@@ -97,7 +97,8 @@ header nav ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
+  width: 500px;
+  padding-right: 16px;
   list-style: none;
 }
 
@@ -113,14 +114,6 @@ header nav ul li a {
   color: white;
 }
 
-header nav ul li a:hover {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #fad400;
-          text-decoration-color: #fad400;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
 header nav ul li span {
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -129,14 +122,15 @@ header nav ul li span {
 }
 
 header nav ul li:last-child {
-  padding: 10px 20px;
-  border-radius: 25px;
+  padding: 10px 30px;
+  border-radius: 30px;
   background-color: white;
-  text-decoration: none;
 }
 
 header nav ul li:last-child:hover {
-  background-color: #fad400;
+  background-color: rgba(255, 255, 255, 0.301);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 @media (max-width: 800px) {
@@ -240,6 +234,7 @@ body {
 }
 
 #section1 {
+  background-color: #FFFBF8;
   text-align: center;
 }
 
@@ -257,6 +252,7 @@ body {
 }
 
 #section2 {
+  background-color: #FFFBF8;
   color: #23303e;
   text-align: center;
 }
@@ -313,6 +309,7 @@ body {
 }
 
 #section4 {
+  background-color: #FFFBF8;
   color: #23303e;
 }
 
@@ -466,12 +463,15 @@ footer #icons {
 }
 
 footer #icons a img {
-  margin-right: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 footer #icons a img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(358deg) brightness(106%) contrast(200%);
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(358deg) brightness(106%) contrast(200%);
 }
 
 footer #icons a img:last-child {
@@ -506,7 +506,7 @@ footer #icons a img:last-child {
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
     max-width: 1440px;
-    height: 85.5vh;
+    height: 87vh;
   }
   header .background {
     background-image: url(images/desktop/image-header.jpg);
@@ -703,6 +703,14 @@ footer #icons a img:last-child {
     width: auto;
     margin: 0;
     padding-top: 38px;
+  }
+  footer ul a {
+    color: #458c7e;
+  }
+  footer ul a:hover {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    color: white;
   }
   footer li {
     margin-right: 62px;
