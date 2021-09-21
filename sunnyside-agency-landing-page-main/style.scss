@@ -208,6 +208,10 @@ footer{
             color: $Darkdesaturatedcyan;
             font-weight: 600;
             font-size: 1.2rem;
+            &:hover{
+                color: $White;
+                transition: 0.3s;
+            }
         }
     }
     a{
@@ -219,11 +223,16 @@ footer{
         justify-content: center;
         align-items: center;
         padding: 40px;
-        img{
-            padding-right: 30px;
-        }
-        img:last-child{
-            padding: 0;
+        a{
+            img{
+                margin-right: 30px;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+            img:last-child{
+                padding: 0;
+            }
         }
     }
 }
@@ -422,8 +431,11 @@ footer{
             margin-right: 62px;
         }
         #icons{
-            margin: 0;
-            padding: 100px 0px 84px;
+            a{
+                img{
+                    padding: 100px 0px 84px;
+                }
+            }
         }
     }
 

@@ -461,6 +461,12 @@ footer ul li {
   font-size: 1.2rem;
 }
 
+footer ul li:hover {
+  color: white;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 footer a {
   text-decoration: none;
   color: #000;
@@ -479,11 +485,16 @@ footer #icons {
   padding: 40px;
 }
 
-footer #icons img {
-  padding-right: 30px;
+footer #icons a img {
+  margin-right: 30px;
 }
 
-footer #icons img:last-child {
+footer #icons a img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+footer #icons a img:last-child {
   padding: 0;
 }
 
@@ -716,8 +727,7 @@ footer #icons img:last-child {
   footer li {
     margin-right: 62px;
   }
-  footer #icons {
-    margin: 0;
+  footer #icons a img {
     padding: 100px 0px 84px;
   }
 }
