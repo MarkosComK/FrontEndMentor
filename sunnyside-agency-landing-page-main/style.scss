@@ -40,7 +40,7 @@ body{
 
 #section1 {
     text-align: center;
-    #sec1-img{
+    .sec1-img{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 2;
@@ -52,7 +52,7 @@ body{
 #section2 {
     color: $Verydarkdesaturatedblue;
     text-align: center;
-    #sec1-img{
+    .sec1-img{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 2;
@@ -71,7 +71,7 @@ body{
         font-size: 1.1250em;
         font-family: 'Barlow';
     }
-    #text-container{
+    .text-container3{
         text-align: center;
         padding: 378px 29px 0px;
     }

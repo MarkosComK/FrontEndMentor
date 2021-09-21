@@ -3,7 +3,7 @@ header{
     #we{
         color: $White;
         text-transform: uppercase;
-        font-size: 2.5em;
+        font-size: 1.5em;
         letter-spacing: 5px;
         position: absolute;
         width: 99vw;
@@ -45,7 +45,16 @@ header{
             align-items: center;
             width: 50%;
             list-style: none;
-            a{
+            li{
+                a{
+                    text-decoration: none;
+                    color: $White;
+                    &:hover{
+                        text-decoration: underline;
+                        text-decoration-color: $Yellow;
+                        transition: 0.5s;
+                    }
+                }
                 font-family: 'Barlow';
                 font-size: 18px;
                 color: $White;
@@ -55,11 +64,6 @@ header{
                     font-size: 0.8rem;
                     font-family: 'Fraunces';
                     color: black;
-                }
-                &:hover{
-                    text-decoration: underline;
-                    text-decoration-color: $Yellow;
-                    transition: 0.5s;
                 }
                 &:last-child{
                     padding: 10px 20px;
@@ -92,8 +96,11 @@ header{
         background-color: $White;
         transform: translateX(115%);
         transition: transform 0.5s ease-in;
-        a{
-            color: $Darkgrayishblue;
+        li{
+            a{
+                color: $Darkgrayishblue;
+
+            }
             &:last-child{
                 background-color: $Yellow;
             }

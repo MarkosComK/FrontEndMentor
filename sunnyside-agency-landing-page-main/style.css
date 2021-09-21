@@ -40,7 +40,7 @@ header {
 header #we {
   color: white;
   text-transform: uppercase;
-  font-size: 2.5em;
+  font-size: 1.5em;
   letter-spacing: 5px;
   position: absolute;
   width: 99vw;
@@ -101,21 +101,19 @@ header nav ul {
   list-style: none;
 }
 
-header nav ul a {
+header nav ul li {
   font-family: 'Barlow';
   font-size: 18px;
   color: white;
   text-decoration: none;
 }
 
-header nav ul a span {
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  font-family: 'Fraunces';
-  color: black;
+header nav ul li a {
+  text-decoration: none;
+  color: white;
 }
 
-header nav ul a:hover {
+header nav ul li a:hover {
   text-decoration: underline;
   -webkit-text-decoration-color: #fad400;
           text-decoration-color: #fad400;
@@ -123,14 +121,21 @@ header nav ul a:hover {
   transition: 0.5s;
 }
 
-header nav ul a:last-child {
+header nav ul li span {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: 'Fraunces';
+  color: black;
+}
+
+header nav ul li:last-child {
   padding: 10px 20px;
   border-radius: 25px;
   background-color: white;
   text-decoration: none;
 }
 
-header nav ul a:last-child:hover {
+header nav ul li:last-child:hover {
   background-color: #fad400;
 }
 
@@ -164,10 +169,10 @@ header nav ul a:last-child:hover {
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   }
-  .nav-links a {
+  .nav-links li a {
     color: #818498;
   }
-  .nav-links a:last-child {
+  .nav-links li:last-child {
     background-color: #fad400;
   }
   .nav-links::before {
@@ -238,7 +243,7 @@ body {
   text-align: center;
 }
 
-#section1 #sec1-img {
+#section1 .sec1-img {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -247,7 +252,7 @@ body {
       grid-template-rows: 2;
 }
 
-#section1 #sec1-img img {
+#section1 .sec1-img img {
   width: 100%;
 }
 
@@ -256,7 +261,7 @@ body {
   text-align: center;
 }
 
-#section2 #sec1-img {
+#section2 .sec1-img {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -265,7 +270,7 @@ body {
       grid-template-rows: 2;
 }
 
-#section2 #sec1-img img {
+#section2 .sec1-img img {
   width: 100%;
 }
 
@@ -282,7 +287,7 @@ body {
   font-family: 'Barlow';
 }
 
-#section3 #text-container {
+#section3 .text-container3 {
   text-align: center;
   padding: 378px 29px 0px;
 }
