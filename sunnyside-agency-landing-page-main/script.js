@@ -7,6 +7,11 @@ const navShow = () => {
     hamburguer.addEventListener('click', () => {
         nav.classList.toggle('show-nav')
     })
+
+    nav.addEventListener('click', () => {
+        nav.classList.toggle('show-nav')
+    })
+
 }
 
 navShow()
