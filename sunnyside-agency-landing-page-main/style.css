@@ -407,6 +407,10 @@ body {
   display: block;
 }
 
+#hidd {
+  display: none;
+}
+
 footer {
   background-color: #90d4c5;
   color: #25564b;
@@ -720,7 +724,8 @@ footer #icons a img:last-child {
     color: white;
   }
   footer li {
-    margin-right: 62px;
+    margin-right: 25px;
+    margin-left: 36px;
   }
   footer #icons a img {
     padding: 100px 0px 84px;
