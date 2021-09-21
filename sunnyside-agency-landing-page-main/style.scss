@@ -191,8 +191,11 @@ footer{
         justify-content: space-around;
         align-items: center;
         list-style: none;
+        padding: 0;
         li{
-            color: $Darkdesaturatedcyan;
+            a{
+                color: $Darkdesaturatedcyan;
+            }
             font-weight: 600;
             font-size: 1.2rem;
             &:hover{

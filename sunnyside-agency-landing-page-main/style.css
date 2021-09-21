@@ -134,6 +134,9 @@ header nav ul li:last-child:hover {
 }
 
 @media (max-width: 800px) {
+  header #we {
+    font-size: 1.1em;
+  }
   .nav-links {
     position: fixed;
     right: 0;
@@ -430,12 +433,16 @@ footer ul {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
+  padding: 0;
 }
 
 footer ul li {
-  color: #25564b;
   font-weight: 600;
   font-size: 1.2rem;
+}
+
+footer ul li a {
+  color: #25564b;
 }
 
 footer ul li:hover {
