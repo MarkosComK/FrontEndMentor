@@ -15,6 +15,7 @@ navShow()
 // Create a media condition that targets viewports at least 800px wide
 const mediaQuery = window.matchMedia('(min-width: 800px)')
 // Change the media src
+mediaQuery.addEventListener(onload, changeImg())
 mediaQuery.addListener(changeImg)
 // Function to change the media(s)
 function changeImg() {
