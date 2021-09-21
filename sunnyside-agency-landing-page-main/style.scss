@@ -10,6 +10,7 @@ html{
     scroll-behavior: smooth;
 }
 */
+
 body{
     margin: 0;
     padding: 0;
@@ -18,6 +19,24 @@ body{
 }
 
 
+.text-container{
+    color: $Verydarkdesaturatedblue;
+    padding: 61px 22px 58px;
+    h2{
+        font-size: 2em;
+    }
+    p{
+        line-height: 30px;
+        padding-top: 30px;
+        font-family: 'Barlow';
+        font-size: 1.1250em;
+        font-weight: 400;
+    }
+    span{
+        text-transform: uppercase;
+        font-family: 'Fraunces';
+    }
+}
 
 #section1 {
     text-align: center;
@@ -27,24 +46,6 @@ body{
         grid-template-rows: 2;
         img{
             width: 100%;
-        }
-    }
-    #text-container{
-        color: $Verydarkdesaturatedblue;
-        padding: 61px 22px 58px;
-        h2{
-            font-size: 2em;
-        }
-        p{
-            line-height: 30px;
-            padding-top: 30px;
-            font-family: 'Barlow';
-            font-size: 1.1250em;
-            font-weight: 400;
-        }
-        span{
-            text-transform: uppercase;
-            font-family: 'Fraunces';
         }
     }
 }
@@ -57,23 +58,6 @@ body{
         grid-template-rows: 2;
         img{
             width: 100%;
-        }
-    }
-    #text-container{
-        padding: 64px 29px 58px;
-        h2{
-            font-size: 2em;
-        }
-        p{
-            line-height: 30px;
-            padding-top: 30px;
-            font-family: 'Barlow';
-            font-size: 1.1250em;
-            font-weight: 400;
-        }
-        span{
-            text-transform: uppercase;
-            font-family: 'Fraunces';
         }
     }
 }
@@ -273,7 +257,7 @@ footer{
         display: grid;
         grid-template-columns: 1fr 1fr;
 
-        #text-container{
+        .text-container{
             padding: 17.36% 16.6% 20.83% 22.2%;
             h2{
                 font-size: 2.475rem;
@@ -318,7 +302,7 @@ footer{
                 transition: 0.1s ease-in;
             }
         }
-        #text-container{
+        .text-container{
             padding: 17.16% 22.6% 20.83% 15.8%;
             h2{
                 font-size: 2.475rem;
