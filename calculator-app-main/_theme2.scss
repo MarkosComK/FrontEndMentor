@@ -1,0 +1,64 @@
+@import '_colors';
+
+.body1{
+    background-color: black;
+}
+.body2{
+    background-color: $Verylightgray;
+}
+
+.main2{
+    background-color: $Lightgray;
+}
+
+.header2{
+    color: $White;
+    .slider2{
+        background: $Grayishred;
+    }
+    .slider2::-webkit-slider-thumb {
+        border: 3px solid $Grayishred;
+        background: $Red;
+    }
+      
+    .slider2::-moz-range-thumb {
+        background: $Grayishred;
+    }
+}
+
+.calc-container2{
+    background-color: $Grayishred;
+    .previous-operand2{
+        color: $White;
+    }
+    .current-operand2{
+        color: $White;
+    }
+}
+
+.buttons-background2{
+    background-color: $Grayishred;
+    .buttons-container{
+        .button2{
+            color: $Verydarkgrayishblue;
+            background: $KeyBackground1;
+            box-shadow: 0px 5px 0px $KeyShadow1;
+            &:nth-child(4){
+                color: $White;
+                background-color: $Darkmoderatecyan;
+                box-shadow:0px 5px 0px $Verydarkcyan;
+            }
+            &:nth-child(17){
+                color: $White;
+                background-color: $Darkmoderatecyan;
+                box-shadow:0px 5px 0px $Verydarkcyan;
+            }
+            &:nth-child(18){
+                color: $White;
+                background-color: $Red;
+                box-shadow:0px 5px 0px $Darkred;
+            }
+        }
+
+    }
+}

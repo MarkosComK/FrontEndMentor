@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Calculator app</title>
 </head>
-<body>
+<body id="body">
 <main>
   <div class="header">
     <h1>calc</h1>
@@ -20,30 +20,33 @@
     </div>
   </div>
   <div class="calc-container">
-    <input type="number">
+    <div data-previous-operand class="previous-operand"></div>
+      <div data-current-operand class="current-operand"></div>
   </div>
   <div class="buttons-background">
     <div class="buttons-container">
-      <div class="button">7</div>
-      <div class="button">8</div>
-      <div class="button">9</div>
-      <div class="button">del</div>
-      <div class="button">4</div>
-      <div class="button">5</div>
-      <div class="button">6</div>
-      <div class="button">+</div>
-      <div class="button">1</div>
-      <div class="button">2</div>
-      <div class="button">3</div>
-      <div class="button">-</div>
-      <div class="button">.</div>
-      <div class="button">0</div>
-      <div class="button">/</div>
-      <div class="button">X</div>
-      <div class="button" id="reset">reset</div>
-      <div class="button" id="equal">=</div>
+      <div data-number class="button" id="7">7</div>
+      <button data-number class="button" id="8">8</button>
+      <button data-number class="button" id="9">9</button>
+      <button data-delete class="button" id="del">del</button>
+      <button data-number class="button" id="4">4</button>
+      <button data-number class="button" id="5">5</button>
+      <button data-number class="button" id="6">6</button>
+      <button data-operation class="button" id="+">+</button>
+      <button data-number class="button" id="1">1</button>
+      <button data-number class="button" id="2">2</button>
+      <button data-number class="button" id="3">3</button>
+      <button data-operation class="button" id="-">-</button>
+      <button data-number class="button" id=".">.</button>
+      <button data-number class="button" id="0">0</button>
+      <button data-operation class="button" id="/">/</button>
+      <button data-operation class="button" id="x">X</button>
+      <button data-reset class="button" id="reset">reset</button>
+      <button data-equal class="button" id="equal">=</button>
     </div>
   </div>
+  <script src="script.js"></script>
+  <script src="theme.js"></script>
 </main>
 </body>
 </html>
