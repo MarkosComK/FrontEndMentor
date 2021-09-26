@@ -1,5 +1,4 @@
 @import '_colors';
-@import '_theme2';
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
@@ -24,9 +23,9 @@ main{
 }
 
 .header{
-
+    
     width: 100%;
-
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,11 +58,11 @@ main{
         -webkit-transition: .2s;
         transition: opacity .2s;
     }
-      
+    
     .slider:hover {
         opacity: 1;
     }
-      
+    
     .slider::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
@@ -74,7 +73,7 @@ main{
         background: $Red;
         cursor: pointer;
     }
-      
+    
     .slider::-moz-range-thumb {
         width: 25px;
         height: 25px;
@@ -161,6 +160,28 @@ main{
                 transform: scale(1.1);
             }
         }
+        .button2{
+            color: $Verydarkgrayishyellow;
+            background: $Lightgrayishyellow;
+            box-shadow: 0px 5px 0px $Darkgrayishorange;
+            &:nth-child(4){
+                color: $White;
+                background-color: $Darkmoderatecyan;
+                box-shadow:0px 5px 0px $Verydarkcyan;
+            }
+            &:nth-child(17){
+                color: $White;
+                background-color: $Darkmoderatecyan;
+                box-shadow:0px 5px 0px $Verydarkcyan;
+            }
+            &:nth-child(18){
+                color: $White;
+                background-color: $Orange;
+                box-shadow:0px 5px 0px $Darkorange;
+            }
+            
+        }
+        
         #equal{
             grid-column: 3/5;
         }
@@ -169,3 +190,6 @@ main{
         }
     }
 }
+
+
+@import '_theme2';
