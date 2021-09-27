@@ -181,6 +181,27 @@ main{
             }
             
         }
+        .button3{
+            color: $Lightyellow;
+            background: $Verydarkviolet;
+            box-shadow: 0px 5px 0px $Darkmagenta;
+            &:nth-child(4){
+                color: $White;
+                background-color: $Darkviolet;
+                box-shadow:0px 5px 0px $Vividmagenta;
+            }
+            &:nth-child(17){
+                color: $White;
+                background-color: $Darkviolet;
+                box-shadow:0px 5px 0px $Vividmagenta;
+            }
+            &:nth-child(18){
+                color: $White;
+                background-color: $Purecyan;
+                box-shadow:0px 5px 0px $Softcyan;
+            }
+            
+        }
         
         #equal{
             grid-column: 3/5;
@@ -193,3 +214,4 @@ main{
 
 
 @import '_theme2';
+@import'_theme3';

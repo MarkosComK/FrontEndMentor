@@ -16,11 +16,47 @@ input.addEventListener('click', () => {
     if (input === '2'){
         theme2()
     }
+    if (input === '3'){
+        theme3()
+    }
 })
-//.contains(class)
-
 
 function theme1(){
+    removeTheme2()
+    removeTheme3()
+}
+
+function theme2(){
+    removeTheme3()
+    body.classList.add('body2')
+    main.classList.add('main2')
+    header.classList.add('header2')
+    slider.classList.add('slider2')
+    calcContainer.classList.add('calc-container2')
+    buttonsBg.classList.add('buttons-background2')
+    buttonsContainer.classList.add('buttonsContainer2')
+    //troca a cor de totdos os botões dentro da array obtida com querySelectorAll
+    for (let i = 0; i < button.length; i++){
+        button[i].classList.add('button2')
+    }
+}
+
+function theme3(){
+    removeTheme2()
+    body.classList.add('body3')
+    main.classList.add('main3')
+    header.classList.add('header3')
+    slider.classList.add('slider3')
+    calcContainer.classList.add('calc-container3')
+    buttonsBg.classList.add('buttons-background3')
+    buttonsContainer.classList.add('buttonsContainer3')
+    for (let i = 0; i < button.length; i++){
+        button[i].classList.add('button3')
+    }
+}
+
+function removeTheme2(){
+    //verifica se há e remove todas as cores do 2º tema (nos botões) 
     for(let i = 0; i < button.length; i++){
         if (button[i].classList.contains('button2')){
             for (let i = 0; i < button.length; i++){
@@ -28,27 +64,31 @@ function theme1(){
             }
     }
     }
+    //verifica se há e remove todas as cores do 2º tema 
     for(let i = 0; i < itemsTemeArray.length; i++){
         if(itemsTemeArray[i].classList.contains(classesTeme2[i])){
             itemsTemeArray[i].classList.remove(classesTeme2[i])
         }
     }
-    body.classList.replace('body2', 'body')
 }
-
-function theme2(){
-    body.classList.toggle('body2')
-    main.classList.toggle('main2')
-    header.classList.toggle('header2')
-    slider.classList.toggle('slider2')
-    calcContainer.classList.toggle('calc-container2')
-    buttonsBg.classList.toggle('buttons-background2')
-    buttonsContainer.classList.toggle('buttonsContainer2')
-    //troca a cor de totdos os botões dentro da array obtida com querySelectorAll
-    for (let i = 0; i < button.length; i++){
-        button[i].classList.toggle('button2')
+function removeTheme3(){
+    //verifica se há e remove todas as cores do 3º tema (nos botões) 
+    for(let i = 0; i < button.length; i++){
+        if (button[i].classList.contains('button3')){
+            for (let i = 0; i < button.length; i++){
+                button[i].classList.toggle('button3')
+            }
+    }
+    }
+    //verifica se há e remove todas as cores do 3º tema 
+    for(let i = 0; i < itemsTemeArray.length; i++){
+        if(itemsTemeArray[i].classList.contains(classesTeme3[i])){
+            itemsTemeArray[i].classList.remove(classesTeme3[i])
+        }
     }
 }
 
 itemsTemeArray = [body, main, header, slider, calcContainer, buttonsBg, buttonsContainer]
 classesTeme2 = ['body2', 'main2', 'header2', 'slider2', 'calc-container2', 'buttons-background2', 'buttonsContainer2']
+
+classesTeme3 = ['body3', 'main3', 'header3', 'slider3', 'calc-container3', 'buttons-background3', 'buttonsContainer3']

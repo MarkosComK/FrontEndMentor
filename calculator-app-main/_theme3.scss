@@ -1,4 +1,4 @@
-.body2{
+.body3{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,25 +7,25 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: $Lightgray;
+    background-color: $Verydarkviolet;
 }
 
-.main2{
+.main3{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: $Lightgray;
+    background-color: $Verydarkviolet;
 }
 
-.header2{
+.header3{
 
     width: 100%;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: $Verydarkgrayishyellow;
+    color: $Lightyellow;
     p{
         text-transform: uppercase;
         margin: 26px 0 0 0;
@@ -43,42 +43,42 @@
         align-items: center; 
         margin-left: 15px;
     } 
-    .slider2 {
+    .slider3 {
         -webkit-appearance: none;
         width: 70px;
         height: 25px;
         border-radius: 25px;
-        background: $Grayishred;
+        background: $Verydarkviolet2;
         outline: none;
         opacity: 0.7;
         -webkit-transition: .2s;
         transition: opacity .2s;
     }
       
-    .slider2:hover {
+    .slider3:hover {
         opacity: 1;
     }
       
-    .slider2::-webkit-slider-thumb {
+    .slider3::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
         width: 23px;
         height: 23px;
         border-radius: 50%;
-        border: 3px solid $Grayishred;
+        border: 3px solid $Verydarkviolet2;
         background: $Red;
         cursor: pointer;
     }
       
-    .slider2::-moz-range-thumb {
+    .slider3::-moz-range-thumb {
         width: 25px;
         height: 25px;
-        background: $Grayishred;
+        background: $Verydarkviolet2;
         cursor: pointer;
     }
 }
 
-.calc-container2{
+.calc-container3{
     border: 1px solid transparent;
     display: flex;
     flex-direction: column;
@@ -88,8 +88,8 @@
     height: 90px;
     border-radius: 5px;
     margin-bottom: 20px;
-    background-color: $Grayishred;
-    .previous-operand{
+    background-color: $Verydarkviolet2;
+    .previous-operand3{
         margin-top: 10px;
         padding: 10px;
         background-color: transparent;
@@ -101,7 +101,7 @@
         text-align: right;
         font-size: 20px;
     }
-    .current-operand{
+    .current-operand3{
         background-color: transparent;
         width: 80%;
         height: 70%;
@@ -112,8 +112,28 @@
     }
 }
 
-.buttons-background2{
-    background-color: $Grayishred;
+.buttons-background3{
+    background-color: $Verydarkviolet2;
 }
 
-@import '_theme3';
+.button3{
+    color: $Lightyellow;
+    background: $Verydarkviolet;
+    box-shadow: 0px 5px 0px $Darkmagenta;
+    &:nth-child(4){
+        color: $White;
+        background-color: $Darkviolet;
+        box-shadow:0px 5px 0px $Vividmagenta;
+    }
+    &:nth-child(17){
+        color: $White;
+        background-color: $Darkviolet;
+        box-shadow:0px 5px 0px $Vividmagenta;
+    }
+    &:nth-child(18){
+        color: $White;
+        background-color: $Purecyan;
+        box-shadow:0px 5px 0px $Softcyan;
+    }
+    
+}
