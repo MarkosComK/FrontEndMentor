@@ -129,7 +129,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 328px;
+  width: calc(min(87vw, 528px));
   height: 90px;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -160,7 +160,7 @@ main {
 }
 
 .buttons-background {
-  width: 328px;
+  width: calc(min(87vw, 528px));
   height: 423px;
   border-radius: 5px;
   background-color: #232c43;
@@ -425,7 +425,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 328px;
+  width: calc(min(87vw, 528px));
   height: 90px;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -590,7 +590,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 328px;
+  width: calc(min(87vw, 528px));
   height: 90px;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -783,7 +783,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 328px;
+  width: calc(min(87vw, 528px));
   height: 90px;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -843,5 +843,11 @@ main {
   background-color: #00e0d1;
   -webkit-box-shadow: 0px 5px 0px #6cf9f2;
           box-shadow: 0px 5px 0px #6cf9f2;
+}
+
+@media (min-width: 800px) {
+  .calc-container {
+    height: 150px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
