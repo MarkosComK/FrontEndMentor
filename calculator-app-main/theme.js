@@ -8,7 +8,7 @@ const buttonsBg = document.querySelector('#buttonsBg')
 const buttonsContainer = document.querySelector('#buttons-container')
 const button = document.querySelectorAll('.button')
 
-input.addEventListener('click', () => {
+input.addEventListener('input', () => {
     let input = document.getElementById('myRange').value
     if (input === '1'){
         theme1()
