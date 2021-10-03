@@ -11,6 +11,7 @@ body {
 
 header {
   position: fixed;
+  z-index: 2;
   width: 100%;
   color: white;
 }
@@ -59,7 +60,7 @@ header .h-container1 .h-container2 .nav-links .links a {
 }
 
 main {
-  height: 628px;
+  height: 650px;
   max-width: 1440px;
   margin: 0 auto;
   color: white;
@@ -92,23 +93,174 @@ main .m-container .main-box h1 {
   margin-right: 110px;
 }
 
-section {
-  border: 1px solid red;
+#section1 {
   max-width: 1100px;
   height: 800px;
   margin: 0 auto;
 }
 
-section img {
+#section1 .sec1-container {
+  position: relative;
+}
+
+#section1 .sec1-container img {
   position: absolute;
-  z-index: -1;
+  top: 160px;
   width: 730px;
   height: 500px;
 }
 
-section .text-content {
+#section1 .sec1-container .text-content {
   background-color: white;
+  position: absolute;
+  top: 340px;
+  right: 0;
+  padding-top: 100px;
   width: 545px;
-  height: 440px;
+}
+
+#section1 .sec1-container .text-content h2 {
+  font-family: 'Josefin Sans';
+  font-size: 46px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-left: 97px;
+}
+
+#section1 .sec1-container .text-content p {
+  font-family: 'Alata';
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  margin-left: 97px;
+}
+
+#section2 {
+  max-width: 1115px;
+  margin: 0 auto;
+}
+
+#section2 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 135px;
+}
+
+#section2 .header h3 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans';
+  font-size: 3rem;
+}
+
+#section2 .header div {
+  text-transform: uppercase;
+  width: 160px;
+  height: 45px;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section2 .sec2-container {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (256px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 256px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+  margin-bottom: 180px;
+}
+
+#section2 .sec2-container .card {
+  position: relative;
+}
+
+#section2 .sec2-container .cardp {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 37px;
+  left: 41px;
+  color: white;
+  font-family: 'Josefin Sans';
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+footer {
+  height: 160px;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .fcontainer {
+  margin: 0 auto;
+  width: 1115px;
+}
+
+footer .fcontainer .grid {
+  max-width: 1115px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+footer .flinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+footer .flinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .flinks ul a {
+  color: white;
+  text-decoration: none;
+  margin-right: 26px;
+}
+
+footer .icons-container {
+  fill: white;
+}
+
+footer .icons {
+  display: inline;
+  text-align: end;
 }
 /*# sourceMappingURL=style.css.map */
