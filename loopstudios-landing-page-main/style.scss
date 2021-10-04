@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
 
 @import './colors';
+@import './header';
+
 body {
     margin: 0;
     padding: 0;
@@ -19,9 +21,10 @@ header{
     width: 100%;
     color: $White;
     .h-container1{
-        max-width: 1440px;
-        height: 160px;
+        max-width: 1100px;
+        padding: 0 7px;
         margin: 0 auto;
+        height: 160px;
         .h-container2{
             height: 100%;
             
@@ -30,21 +33,22 @@ header{
             align-items: center;
             .logo{
                 font-size: 2.25rem;
-                margin-left: 160px;
             }
             .nav-links{
                 width: 40%;
-                margin-right: 150px;
                 .links{
                     display: flex;
                     justify-content: space-around;
                     list-style: none;
-    
+                    
                     a{
                         color: $White;
                         text-decoration: none;
                     }
                 }
+            }
+            .none{
+                display: none;
             }
         }
     }
@@ -62,6 +66,7 @@ main {
     background-size: cover;
     .m-container{
         max-width: 1100px;
+        padding: 0 7px;
         margin: 0 auto;
         position: relative;
         top: 224px;
@@ -86,6 +91,7 @@ main {
 }
 #section1{
     max-width: 1100px;
+    padding: 0 7px;
     height: 800px;
     margin: 0 auto;
     .sec1-container{
@@ -103,14 +109,14 @@ main {
             right: 0;
             padding-top: 100px;
     
-            width: 545px;
+            width: 48%;
             h2{
                 font-family: 'Josefin Sans';
                 font-size: 46px;
                 text-transform: uppercase;
                 margin: 0;
                 padding: 0;
-                margin-left: 97px;
+                margin-left: 18%;
             }
             p{
                 font-family: 'Alata';
@@ -123,6 +129,7 @@ main {
 }
 #section2{
     max-width: 1115px;
+    padding: 0 7px;
     margin: 0 auto;
     .header{
         display: flex;
@@ -178,9 +185,11 @@ footer{
     align-items: center;
     .fcontainer{
         margin: 0 auto;
-        width: 1115px;
+        width: 1100px;
+        padding: 0 7px;
         .grid{
-            max-width: 1115px;
+            max-width: 1100px;
+            padding: 0 7px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
 

@@ -1,5 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+.scrolling-active {
+  background-color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.scrolling-height {
+  max-height: 100px;
+}
+
+@media (max-width: 940px) {
+  .hamburguer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 30px;
+  }
+  .hamburguer:hover {
+    cursor: pointer;
+  }
+  .hamburguer .line1, .hamburguer .line2, .hamburguer .line3 {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: white;
+    height: 1px;
+    width: 25px;
+  }
+  .active .line1 {
+    -webkit-transform: translate(-4px, 10px) rotate(45deg);
+            transform: translate(-4px, 10px) rotate(45deg);
+  }
+  .active .line2 {
+    opacity: 0;
+  }
+  .active .line3 {
+    -webkit-transform: translate(-4px, -10px) rotate(-45deg);
+            transform: translate(-4px, -10px) rotate(-45deg);
+  }
+  .links {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    border: 1px solid black;
+    background-color: black;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .links-active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -17,9 +85,10 @@ header {
 }
 
 header .h-container1 {
-  max-width: 1440px;
-  height: 160px;
+  max-width: 1100px;
+  padding: 0 7px;
   margin: 0 auto;
+  height: 160px;
 }
 
 header .h-container1 .h-container2 {
@@ -37,12 +106,10 @@ header .h-container1 .h-container2 {
 
 header .h-container1 .h-container2 .logo {
   font-size: 2.25rem;
-  margin-left: 160px;
 }
 
 header .h-container1 .h-container2 .nav-links {
   width: 40%;
-  margin-right: 150px;
 }
 
 header .h-container1 .h-container2 .nav-links .links {
@@ -59,6 +126,10 @@ header .h-container1 .h-container2 .nav-links .links a {
   text-decoration: none;
 }
 
+header .h-container1 .h-container2 .none {
+  display: none;
+}
+
 main {
   height: 650px;
   max-width: 1440px;
@@ -71,6 +142,7 @@ main {
 
 main .m-container {
   max-width: 1100px;
+  padding: 0 7px;
   margin: 0 auto;
   position: relative;
   top: 224px;
@@ -95,6 +167,7 @@ main .m-container .main-box h1 {
 
 #section1 {
   max-width: 1100px;
+  padding: 0 7px;
   height: 800px;
   margin: 0 auto;
 }
@@ -116,7 +189,7 @@ main .m-container .main-box h1 {
   top: 340px;
   right: 0;
   padding-top: 100px;
-  width: 545px;
+  width: 48%;
 }
 
 #section1 .sec1-container .text-content h2 {
@@ -125,7 +198,7 @@ main .m-container .main-box h1 {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-left: 97px;
+  margin-left: 18%;
 }
 
 #section1 .sec1-container .text-content p {
@@ -137,6 +210,7 @@ main .m-container .main-box h1 {
 
 #section2 {
   max-width: 1115px;
+  padding: 0 7px;
   margin: 0 auto;
 }
 
@@ -218,11 +292,13 @@ footer {
 
 footer .fcontainer {
   margin: 0 auto;
-  width: 1115px;
+  width: 1100px;
+  padding: 0 7px;
 }
 
 footer .fcontainer .grid {
-  max-width: 1115px;
+  max-width: 1100px;
+  padding: 0 7px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
