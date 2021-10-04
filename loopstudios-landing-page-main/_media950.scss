@@ -1,0 +1,18 @@
+@media (max-width:940px) {
+    #section1{
+        min-height: 850px;
+    }
+
+}
+
+@media (max-width:555px) {
+    .sec1-container{
+        position: static;
+    }
+    img{
+        position: static;
+    }
+    #img-grid-1, #img-grid-2, #img-grid-3, #img-grid-4, #img-grid-5, #img-grid-6, #img-grid-7, #img-grid-8{
+        width: 100%;
+    }
+}

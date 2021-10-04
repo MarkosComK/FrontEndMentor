@@ -157,7 +157,6 @@ main {
     .sec2-container{
         position: relative;
         display: grid;
-        grid-template-columns: repeat(auto-fit, 256px);
         justify-content: center;
         gap: 30px;
         margin-bottom: 180px;
@@ -176,6 +175,9 @@ main {
             text-transform: uppercase;
         }
     }
+}
+.grid-auto{
+    grid-template-columns: repeat(auto-fit, 256px);
 }
 footer{
     height: 160px;
@@ -219,3 +221,6 @@ footer{
         text-align: end;
     }
 }
+
+
+@import './media950';

@@ -2,8 +2,8 @@ window.addEventListener('scroll', () => {
     let nav = document.querySelector('.header')
     let navC = document.querySelector('.h-container1')
     
-    nav.classList.toggle('scrolling-active', window.scrollY > 0)
-    navC.classList.toggle('scrolling-height', window.scrollY > 0)
+    nav.classList.toggle('scrolling-active', window.scrollY > 40)
+    navC.classList.toggle('scrolling-height', window.scrollY > 40)
     
 })
 

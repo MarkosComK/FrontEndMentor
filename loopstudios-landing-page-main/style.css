@@ -253,8 +253,6 @@ main .m-container .main-box h1 {
   position: relative;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (256px)[auto-fit];
-      grid-template-columns: repeat(auto-fit, 256px);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -276,6 +274,11 @@ main .m-container .main-box h1 {
   font-family: 'Josefin Sans';
   font-size: 2rem;
   text-transform: uppercase;
+}
+
+.grid-auto {
+  -ms-grid-columns: (256px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 256px);
 }
 
 footer {
@@ -338,5 +341,23 @@ footer .icons-container {
 footer .icons {
   display: inline;
   text-align: end;
+}
+
+@media (max-width: 940px) {
+  #section1 {
+    min-height: 850px;
+  }
+}
+
+@media (max-width: 555px) {
+  .sec1-container {
+    position: static;
+  }
+  img {
+    position: static;
+  }
+  #img-grid-1, #img-grid-2, #img-grid-3, #img-grid-4, #img-grid-5, #img-grid-6, #img-grid-7, #img-grid-8 {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
