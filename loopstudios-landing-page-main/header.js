@@ -12,14 +12,14 @@ let hamburguer = document.querySelector('.hamburguer')
 function myFunction(x) {
     if (x.matches) { // If media query matches
         hamburguer.classList.remove('none')
-    } else{
+    }else{
         hamburguer.classList.add('none')
     }
   }
   
   var x = window.matchMedia("(max-width: 940px)")
   myFunction(x) 
-  x.addListener(myFunction) 
+  x.addEventListener("change", myFunction) 
 
   hamburguer.addEventListener('click', () => {
       let navLinks = document.querySelector('.links')

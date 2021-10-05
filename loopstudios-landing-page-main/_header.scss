@@ -35,13 +35,18 @@
     .links{
         position: absolute;
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         left: 0;
+        top: 9vh;
         border: 1px solid black;
         background-color: $Black;
         flex-direction: column;
+        justify-content: center !important;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        li{
+            margin-bottom: 100px;
+        }
     }
     .links-active{
         transform: translateX(0);

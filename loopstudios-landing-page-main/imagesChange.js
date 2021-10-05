@@ -21,9 +21,6 @@ function myFunction(x) {
         img7.src="images/mobile/image-curiosity.jpg"
         img8.src="images/mobile/image-fisheye.jpg"
         grid.classList.remove('grid-auto')
-
-    } else{
-        hamburguer.classList.add('none')
     }
 }
   
@@ -31,4 +28,4 @@ function myFunction(x) {
 
 var x = window.matchMedia("(max-width: 555px)")
 myFunction(x) 
-x.addListener(myFunction) 
+x.addEventListener('change', myFunction) 
