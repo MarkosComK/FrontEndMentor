@@ -51,15 +51,36 @@
                 }
             }
         }
-
+        
     }
     #section2{
+        border: 1px solid red;
         h3{
             text-align: center;
             font-size: 42px !important;
         }
         .button{
             display: none !important;
+        }
+        .button2{
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+
+            text-transform: uppercase;
+            width: 160px;
+            height: 45px;
+            background-color: $Black;
+            color: $White;
+            
+            &:hover{
+                cursor: pointer;
+                background-color: $White;
+                color: $Black;
+                border: 1px solid $DarkGray;
+                transition: 0.1s;
+            }
+            margin: 0 auto;
         }
     }
     #img-grid-1, #img-grid-2, #img-grid-3, #img-grid-4, #img-grid-5, #img-grid-6, #img-grid-7, #img-grid-8{
