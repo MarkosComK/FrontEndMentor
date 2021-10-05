@@ -68,6 +68,113 @@
   }
 }
 
+@media (max-width: 940px) {
+  #section1 {
+    min-height: 850px;
+  }
+}
+
+@media (max-width: 800px) {
+  img:hover {
+    pointer-events: none !important;
+  }
+  main .main-box {
+    width: 100% !important;
+  }
+  main .main-box h1 {
+    font-size: 50px !important;
+    padding: 0 !important;
+    margin: 30px 15px !important;
+  }
+  #section1 .sec1-container {
+    height: 861px  !important;
+  }
+  #section1 .sec1-container img {
+    position: relative  !important;
+    width: 100%  !important;
+    height: 285px  !important;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: 122px  !important;
+    left: 50%;
+  }
+  #section1 .sec1-container .text-content {
+    width: 364px  !important;
+    position: static !important;
+    margin: 0  !important;
+    padding: 0  !important;
+    margin: 0 auto !important;
+    margin-top: 180px !important;
+  }
+  #section1 .sec1-container .text-content p {
+    text-align: center;
+    margin: 0  !important;
+    padding: 0  !important;
+  }
+  #section1 .sec1-container .text-content h2 {
+    text-align: center;
+    font-size: 38px  !important;
+    margin: 0  !important;
+  }
+  #section2 h3 {
+    text-align: center;
+    font-size: 42px !important;
+  }
+  #section2 .button {
+    display: none !important;
+  }
+  #img-grid-1, #img-grid-2, #img-grid-3, #img-grid-4, #img-grid-5, #img-grid-6, #img-grid-7, #img-grid-8 {
+    width: 100%;
+  }
+  footer {
+    height: 600px !important;
+  }
+  footer ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 200px;
+  }
+  footer ul a {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  footer div {
+    text-align: center;
+  }
+  footer .flogo {
+    font-size: 38px;
+  }
+  footer .icons-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 53px;
+  }
+  footer .grid {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+  footer p {
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  main {
+    background-image: url(images/mobile/image-hero.jpg) !important;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -108,6 +215,11 @@ header .h-container1 .h-container2 .logo {
   font-size: 2.25rem;
 }
 
+header .h-container1 .h-container2 .logo a {
+  text-decoration: none;
+  color: white;
+}
+
 header .h-container1 .h-container2 .nav-links {
   width: 40%;
 }
@@ -124,6 +236,13 @@ header .h-container1 .h-container2 .nav-links .links {
 header .h-container1 .h-container2 .nav-links .links a {
   color: white;
   text-decoration: none;
+}
+
+header .h-container1 .h-container2 .nav-links .links a:hover {
+  border-bottom: 1px solid white;
+  padding-bottom: 6px;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 header .h-container1 .h-container2 .none {
@@ -155,6 +274,12 @@ main .m-container .main-box {
   border: 1px solid white;
 }
 
+main .m-container .main-box:hover {
+  border: 1px solid #8c8c8c;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 main .m-container .main-box h1 {
   font-family: 'Josefin Sans';
   font-weight: 300;
@@ -181,6 +306,13 @@ main .m-container .main-box h1 {
   top: 160px;
   width: 730px;
   height: 500px;
+}
+
+#section1 .sec1-container img:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 #section1 .sec1-container .text-content {
@@ -249,6 +381,15 @@ main .m-container .main-box h1 {
           align-items: center;
 }
 
+#section2 .header div:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 1px solid #8c8c8c;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
 #section2 .sec2-container {
   position: relative;
   display: -ms-grid;
@@ -274,6 +415,20 @@ main .m-container .main-box h1 {
   font-family: 'Josefin Sans';
   font-size: 2rem;
   text-transform: uppercase;
+}
+
+#section2 #card1:hover, #section2 #card2:hover, #section2 #card3:hover, #section2 #card4:hover, #section2 #card5:hover, #section2 #card6:hover, #section2 #card7:hover, #section2 #card8:hover {
+  cursor: pointer;
+}
+
+#section2 #card1:hover img, #section2 #card2:hover img, #section2 #card3:hover img, #section2 #card4:hover img, #section2 #card5:hover img, #section2 #card6:hover img, #section2 #card7:hover img, #section2 #card8:hover img {
+  opacity: 0.5;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+#section2 #card1:hover p, #section2 #card2:hover p, #section2 #card3:hover p, #section2 #card4:hover p, #section2 #card5:hover p, #section2 #card6:hover p, #section2 #card7:hover p, #section2 #card8:hover p {
+  color: black;
 }
 
 .grid-auto {
@@ -326,12 +481,20 @@ footer .flinks ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top: 20px;
 }
 
 footer .flinks ul a {
   color: white;
   text-decoration: none;
   margin-right: 26px;
+}
+
+footer .flinks ul a:hover {
+  border-bottom: 1px solid white;
+  padding-bottom: 6px;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
 }
 
 footer .icons-container {
@@ -343,21 +506,15 @@ footer .icons {
   text-align: end;
 }
 
-@media (max-width: 940px) {
-  #section1 {
-    min-height: 850px;
-  }
+footer .icons #icon1, footer .icons #icon2, footer .icons #icon3, footer .icons #icon4 {
+  margin-right: 17px;
 }
 
-@media (max-width: 555px) {
-  .sec1-container {
-    position: static;
-  }
-  img {
-    position: static;
-  }
-  #img-grid-1, #img-grid-2, #img-grid-3, #img-grid-4, #img-grid-5, #img-grid-6, #img-grid-7, #img-grid-8 {
-    width: 100%;
-  }
+footer .icons #icon1:hover, footer .icons #icon2:hover, footer .icons #icon3:hover, footer .icons #icon4:hover {
+  cursor: pointer;
+}
+
+footer .icons #icon4 {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

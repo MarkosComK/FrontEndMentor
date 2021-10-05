@@ -3,6 +3,11 @@
 
 @import './colors';
 @import './header';
+@import './media950';
+
+// html{
+//     scroll-behavior: smooth;
+// }
 
 body {
     margin: 0;
@@ -33,6 +38,10 @@ header{
             align-items: center;
             .logo{
                 font-size: 2.25rem;
+                a{
+                    text-decoration: none;
+                    color: $White;
+                }
             }
             .nav-links{
                 width: 40%;
@@ -44,6 +53,11 @@ header{
                     a{
                         color: $White;
                         text-decoration: none;
+                        &:hover{
+                            border-bottom: 1px solid $White;
+                            padding-bottom: 6px;
+                            transition: 0.2s ease-in;
+                        }
                     }
                 }
             }
@@ -76,6 +90,10 @@ main {
             width: 650px;
             height: 280px;
             border: 1px solid $White;
+            &:hover{
+                border: 1px solid $DarkGray;
+                transition: 0.2s;
+            }
     
             h1{
                 font-family: 'Josefin Sans';
@@ -101,6 +119,10 @@ main {
             top: 160px;
             width: 730px;
             height: 500px;
+            &:hover{
+                transform: scale(1.02);
+                transition: 0.2s ease-in;
+            }
         }
         .text-content{
             background-color: $White;
@@ -152,6 +174,13 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
+            &:hover{
+                cursor: pointer;
+                background-color: $White;
+                color: $Black;
+                border: 1px solid $DarkGray;
+                transition: 0.1s;
+            }
         }
     }
     .sec2-container{
@@ -175,6 +204,18 @@ main {
             text-transform: uppercase;
         }
     }
+    #card1, #card2, #card3, #card4, #card5, #card6, #card7, #card8 {
+        &:hover{
+            cursor: pointer;
+            img{
+                opacity: 0.5;
+                transform: scale(1.01);
+            }
+            p{
+                color: $Black;
+            }
+        }
+      }
 }
 .grid-auto{
     grid-template-columns: repeat(auto-fit, 256px);
@@ -206,10 +247,16 @@ footer{
             list-style: none;
             margin: 0;
             padding: 0;
+            margin-top: 20px;
             a{
                 color: $White;
                 text-decoration: none;
                 margin-right: 26px;
+                &:hover{
+                    border-bottom: 1px solid $White;
+                    padding-bottom: 6px;
+                    transition: 0.2s ease-in;
+                }
             }
         }
     }
@@ -219,8 +266,14 @@ footer{
     .icons{
         display: inline;
         text-align: end;
+        #icon1, #icon2, #icon3, #icon4{
+            margin-right: 17px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        #icon4{
+            margin: 0;
+        }
     }
 }
-
-
-@import './media950';

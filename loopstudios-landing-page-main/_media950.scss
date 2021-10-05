@@ -5,14 +5,101 @@
 
 }
 
-@media (max-width:555px) {
-    .sec1-container{
-        position: static;
-    }
+@media (max-width:800px) {
     img{
-        position: static;
+        &:hover{
+            pointer-events: none !important;
+        }
+    }
+    main{
+        .main-box{
+            width: 100% !important;
+            h1{
+                font-size: 50px !important;
+                padding: 0 !important;
+                margin: 30px 15px !important;
+            }
+        }
+    }
+    #section1{
+        .sec1-container{
+            height: 861px  !important;
+            img{
+                position: relative  !important;
+                width: 100%  !important; 
+                height: 285px  !important;
+                transform: translateX(-50%);
+                top: 122px  !important;
+                left: 50%;
+            }
+            .text-content{
+                width: 364px  !important;
+                position: static !important;
+                margin: 0  !important;
+                padding: 0  !important;
+                margin: 0 auto !important;
+                margin-top: 180px !important;
+                p{
+                    text-align: center;
+                    margin: 0  !important;
+                    padding: 0  !important;
+                }
+                h2{
+                    text-align: center;
+                    font-size: 38px  !important;
+                    margin: 0  !important;
+                }
+            }
+        }
+
+    }
+    #section2{
+        h3{
+            text-align: center;
+            font-size: 42px !important;
+        }
+        .button{
+            display: none !important;
+        }
     }
     #img-grid-1, #img-grid-2, #img-grid-3, #img-grid-4, #img-grid-5, #img-grid-6, #img-grid-7, #img-grid-8{
         width: 100%;
+    }
+    footer{
+        height: 600px !important;
+        ul{
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 200px;
+            a{
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+        }
+        div{
+            text-align: center;
+        }
+        .flogo{
+            font-size: 38px;
+        }
+        .icons-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 53px;
+        }
+        .grid{
+            grid-template-columns: 1fr !important;
+        }
+        p{
+            display: none;
+        }
+    }
+}
+
+@media(max-width: 375px){
+    main{
+        background-image: url(images/mobile/image-hero.jpg) !important;
+
     }
 }
