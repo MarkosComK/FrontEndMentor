@@ -33,3 +33,8 @@ function myFunction(x) {
           navC.classList.toggle('scrolling-height')
       }
   })
+navLinks = document.querySelector('.links')
+navLinks.addEventListener('click', () => {
+    hamburguer.classList.toggle('active')
+    navLinks.classList.toggle('links-active')
+})
