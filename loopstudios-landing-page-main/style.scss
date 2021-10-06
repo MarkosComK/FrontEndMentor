@@ -68,7 +68,7 @@ header{
         }
     }
 }
-main {
+.principal {
     height: 650px;
     max-width: 1440px;
 
@@ -108,7 +108,7 @@ main {
         }
     }
 }
-#section1{
+#sec1{
     max-width: 1100px;
     padding: 0 7px;
     height: 800px;
@@ -153,11 +153,11 @@ main {
         }
     }
 }
-#section2{
+#sec2{
     max-width: 1115px;
     padding: 0 7px;
     margin: 0 auto;
-    .header{
+    .headerdiv{
         display: flex;
         justify-content: space-between;
         height: 135px;

@@ -286,7 +286,7 @@ header .h-container1 .h-container2 .none {
   display: none;
 }
 
-main {
+.principal {
   height: 650px;
   max-width: 1440px;
   margin: 0 auto;
@@ -296,7 +296,7 @@ main {
   background-size: cover;
 }
 
-main .m-container {
+.principal .m-container {
   max-width: 1100px;
   padding: 0 7px;
   margin: 0 auto;
@@ -304,20 +304,20 @@ main .m-container {
   top: 224px;
 }
 
-main .m-container .main-box {
+.principal .m-container .main-box {
   position: relative;
   width: 650px;
   height: 280px;
   border: 1px solid white;
 }
 
-main .m-container .main-box:hover {
+.principal .m-container .main-box:hover {
   border: 1px solid #8c8c8c;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
-main .m-container .main-box h1 {
+.principal .m-container .main-box h1 {
   font-family: 'Josefin Sans';
   font-weight: 300;
   font-size: 70px;
@@ -327,32 +327,32 @@ main .m-container .main-box h1 {
   margin-right: 110px;
 }
 
-#section1 {
+#sec1 {
   max-width: 1100px;
   padding: 0 7px;
   height: 800px;
   margin: 0 auto;
 }
 
-#section1 .sec1-container {
+#sec1 .sec1-container {
   position: relative;
 }
 
-#section1 .sec1-container img {
+#sec1 .sec1-container img {
   position: absolute;
   top: 160px;
   width: 730px;
   height: 500px;
 }
 
-#section1 .sec1-container img:hover {
+#sec1 .sec1-container img:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
   -webkit-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
 
-#section1 .sec1-container .text-content {
+#sec1 .sec1-container .text-content {
   background-color: white;
   position: absolute;
   top: 340px;
@@ -361,7 +361,7 @@ main .m-container .main-box h1 {
   width: 48%;
 }
 
-#section1 .sec1-container .text-content h2 {
+#sec1 .sec1-container .text-content h2 {
   font-family: 'Josefin Sans';
   font-size: 46px;
   text-transform: uppercase;
@@ -370,7 +370,7 @@ main .m-container .main-box h1 {
   margin-left: 18%;
 }
 
-#section1 .sec1-container .text-content p {
+#sec1 .sec1-container .text-content p {
   font-family: 'Alata';
   font-size: 16px;
   letter-spacing: -0.5px;
@@ -380,13 +380,13 @@ main .m-container .main-box h1 {
   line-height: 25px;
 }
 
-#section2 {
+#sec2 {
   max-width: 1115px;
   padding: 0 7px;
   margin: 0 auto;
 }
 
-#section2 .header {
+#sec2 .headerdiv {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -396,7 +396,7 @@ main .m-container .main-box h1 {
   height: 135px;
 }
 
-#section2 .header h3 {
+#sec2 .headerdiv h3 {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
@@ -404,7 +404,7 @@ main .m-container .main-box h1 {
   font-size: 3rem;
 }
 
-#section2 .header div {
+#sec2 .headerdiv div {
   text-transform: uppercase;
   width: 160px;
   height: 45px;
@@ -421,7 +421,7 @@ main .m-container .main-box h1 {
           align-items: center;
 }
 
-#section2 .header div:hover {
+#sec2 .headerdiv div:hover {
   cursor: pointer;
   background-color: white;
   color: black;
@@ -430,11 +430,11 @@ main .m-container .main-box h1 {
   transition: 0.1s;
 }
 
-#section2 .button2 {
+#sec2 .button2 {
   display: none;
 }
 
-#section2 .sec2-container {
+#sec2 .sec2-container {
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -445,11 +445,11 @@ main .m-container .main-box h1 {
   margin-bottom: 180px;
 }
 
-#section2 .sec2-container .card {
+#sec2 .sec2-container .card {
   position: relative;
 }
 
-#section2 .sec2-container .cardp {
+#sec2 .sec2-container .cardp {
   margin: 0;
   padding: 0;
   position: absolute;
@@ -461,17 +461,17 @@ main .m-container .main-box h1 {
   text-transform: uppercase;
 }
 
-#section2 #card1:hover, #section2 #card2:hover, #section2 #card3:hover, #section2 #card4:hover, #section2 #card5:hover, #section2 #card6:hover, #section2 #card7:hover, #section2 #card8:hover {
+#sec2 #card1:hover, #sec2 #card2:hover, #sec2 #card3:hover, #sec2 #card4:hover, #sec2 #card5:hover, #sec2 #card6:hover, #sec2 #card7:hover, #sec2 #card8:hover {
   cursor: pointer;
 }
 
-#section2 #card1:hover img, #section2 #card2:hover img, #section2 #card3:hover img, #section2 #card4:hover img, #section2 #card5:hover img, #section2 #card6:hover img, #section2 #card7:hover img, #section2 #card8:hover img {
+#sec2 #card1:hover img, #sec2 #card2:hover img, #sec2 #card3:hover img, #sec2 #card4:hover img, #sec2 #card5:hover img, #sec2 #card6:hover img, #sec2 #card7:hover img, #sec2 #card8:hover img {
   opacity: 0.5;
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
 }
 
-#section2 #card1:hover p, #section2 #card2:hover p, #section2 #card3:hover p, #section2 #card4:hover p, #section2 #card5:hover p, #section2 #card6:hover p, #section2 #card7:hover p, #section2 #card8:hover p {
+#sec2 #card1:hover p, #sec2 #card2:hover p, #sec2 #card3:hover p, #sec2 #card4:hover p, #sec2 #card5:hover p, #sec2 #card6:hover p, #sec2 #card7:hover p, #sec2 #card8:hover p {
   color: black;
 }
 
